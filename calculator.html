@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+</style>
+</head>
+<body>
+  
+  <form name="Calc" action="--WEBBOT-SELF--" method="POST">
+<p>
+
+Number of Adults:
+<input type="text" name="num1" size="12" tabindex="1" value="0">
+<br>
+  Number of Children:
+<input type="text" name="num2" size="12" tabindex="2" value="0">
+
+
+
+
+
+  
+<br> Price £: <input type="text" name="Input" size="17" tabindex="3">
+
+
+
+</p>
+<input type="button" name="sum"  value="Calculate" OnClick="aplusb(this.form)" tabindex="4">
+
+<script>
+
+function aplusb(form) {
+
+a=eval(Calc.num1.value);
+
+   
+  f=eval (Calc.num2.value);
+  
+if (a > 0)
+  {
+  b= 5;
+  c=a * b;
+  d= 20;
+  e= 15;
+  g= 5;
+  h=f * 5;
+  Calc.Input.value = c - b + d + h; 
+ 
+  }
+  
+else if (f > 0)
+  {
+  b= 5;
+  c=f * b;
+    d= a * b;
+    e= 15;
+  Calc.Input.value = c - b + e ;
+  
+  }
+
+}
+
+
+</script>
+
+</form>
+  
+
+
+
+
+
+
+</body>
+</html>
